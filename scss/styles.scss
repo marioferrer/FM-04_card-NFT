@@ -1,0 +1,142 @@
+@import "reset", "variables", "mixins";
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: $blue-bg;
+  @include flex (row, center, center);
+}
+
+.article {
+  background-color: $blue-card;
+  max-width: 20rem;
+  min-width: 16rem;
+  height: auto;
+  padding: 1.5rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  // max-height: 50rem;
+
+  &__h1 {
+    color: $white;
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: color .2s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: $cyan;
+    }
+  }
+
+  &__p {
+    color: $blue;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  &__info {
+    width: 100%;
+    @include flex (row, space-between, center);
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $blue-line;
+  }
+
+  &__wrapper {
+    @include flex (row, center, center);
+  }
+
+  &__svg {
+    width: 1rem;
+    margin-right: .5rem;
+  }
+
+  &__span {
+    font-size: 1rem;
+  }
+
+  .eth {
+    color: $cyan;
+    font-weight: 600;
+  }
+
+  .clock {
+    color: $blue;
+  }
+}
+
+.wrapper {
+  @include flex (column, center, flex-start);
+  gap: 1rem;
+}
+
+.overlay {
+  position: relative;
+
+  &:hover .overlay__wrapper {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    opacity: 0;
+    transition: all .3s ease;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 3rem;
+    z-index: 4;
+  }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $cyan;
+    opacity: .4;
+    border-radius: 1rem;
+  }
+
+  &__img--main {
+    border-radius: 1rem;
+    width: 100%;
+  }
+}
+
+
+.footer {
+  width: 100%;
+  @include flex (row, flex-start, center);
+  gap: 1rem;
+
+  &__img {
+    width: 3.5rem;
+    border: 1px solid $white;
+    border-radius: 50%;
+  }
+
+  &__span {
+    color: $blue;
+    font-size: 1rem;
+  }
+
+  &__a {
+    color: $white;
+    font-size: 1rem;
+    transition: color .2s ease;
+
+    &:hover {
+      color: $cyan;
+    }
+  }
+
+}
