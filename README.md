@@ -23,8 +23,8 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Links
 
-- Solution Frontend Mentor: [Frontend solution](https://www.frontendmentor.io/solutions/qr-code-murYUcVduA)
-- Live Site: [Live site with GitHub Pages](https://marioferrer.github.io/FM-03_QR-code/)
+- Solution Frontend Mentor: [Frontend solution](https://www.frontendmentor.io/solutions/nft-card-kREri3OiZx)
+- Live Site: [Live site with GitHub Pages](https://marioferrer.github.io/FM-04_card-NFT/)
 
 ## My process
 
